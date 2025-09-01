@@ -5,6 +5,7 @@
 ### -cd server -> npm install
 ### -npm run dev
 
-## To Run db/seed.js
+## To Run db/seed.js , To seed 3 users
 ### node db/seed.js
+#### now you can create tasks , entry time and get daily report
 
