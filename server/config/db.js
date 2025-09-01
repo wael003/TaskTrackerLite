@@ -1,7 +1,7 @@
 const mongoose  = require('mongoose');
 
 const Database = ()=>{
-    mongoose.connect(process.env.MONGOURL)
+    mongoose.connect(process.env.MONGOURL || 'mongodb://127.0.0.1:27017/TaskTracker')
     .then(()=>{
         console.log('Database connected!')
     })
