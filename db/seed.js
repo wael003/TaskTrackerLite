@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const User = require('../server/models/Users'); 
 
-const mongoURI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/TaskTracker';
+const mongoURI = process.env.MONGOURL || 'mongodb://127.0.0.1:27017/TaskTracker';
 
 mongoose.connect(mongoURI)
     .then(() => console.log('MongoDB connected'))
